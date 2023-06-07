@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <title>1</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <form action="#" method="get" enctype="multipart/form-data">
+
+    <div class="add-form">
+        
+        <header class="header-block">
+            <div class="header-block__title">
+                <h1>Add Teacher</h1>
+            </div>
+            <div class="header-block__cross"></div>
+        </header>
+
+        <div class="form-fields">
+            <form action="#" method="post" enctype="multipart/form-data">
+                <div class="block-fields">
+                    <div class="block-fields__name-sceciality">
+                        <div class="title">
+                            Name
+                        </div>
+                        <div>
+                            <input required class="form" type="text" placeholder="Enter name" name="fullName">
+                        </div>
+                    </div>
+
+                    <div class="block-fields__name-sceciality">
+                        <div class="title">
+                            Sceciality
+                        </div>
+                        <div>
+                            <select class="form" name="sceciality">
+                                <option value="Mathematics">Mathematics</option>
+                                <option value="Graphic Design">Graphic Design</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="flex">
+                <div class="flex__row">
+                    <div class="flex__column">
+                        <div class="flex__content">
+                            <div class="title">
+                                Country
+                            </div>
+                            <div>
+                                <select class="form" name="country">
+                                    <option value="Ukraine">Ukraine</option>
+                                    <option value="Burning russia">burning russia</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex__column">
+                        <div class="flex__content">
+                            <div class="title">
+                                City
+                            </div>
+                            <div>
+                                <input required class="form" type="text" name="city">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex__column">
+                        <div class="flex__content">
+                            <div class="title">
+                                Email
+                            </div>
+                            <div>
+                                <input required class="form" type="email" name="email" pattern="[a-z0-9._%+-]+@gmail.com" title = "user@gmail.com">
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="flex__column">
+                        <div div class="flex__content">
+                            <div class="title">
+                                Phone
+                            </div>
+                            <div>
+                                <input required class="form" type="tel" name="phone" pattern="\d{3}-\d{3}-\d{4}" title = "xxx-xxx-xxxx">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="block">
+                <div class="block-content">
+                <div class="block-info">
+                        <div class="title">
+                            Date of birth
+                        </div>
+                        <div>
+                            <input required class="form-data" type="date" name="dateOfBirth">
+                        </div>
+                </div>
+                <div class="block-info">
+                        <div class="radio-items">
+                                <!-- <h6 class = "title">Sex</h6> -->
+                                <span class="title">Sex</span>
+                                <span class="radio-text">Male <input checked type="radio" name="sex" value="male"></span>
+                                <span class="radio-text">Female <input type="radio" name="sex" value="female"></span>
+                        </div>
+                </div>
+                <div class="block-info">
+                        <span class="title">Background color</span>
+                        <input class="form-color" type="color">
+                </div>
+                </div>
+            </div>
+
+                <div class="notes">
+                    <div class="title">
+                        Notes (optional)
+                    </div>
+                    <div>
+                        <textarea class="form" name="notes" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+
+                <div class="button">
+                    <button onclick="" class = "button__content" type="submit">
+                        Add
+                    </button>
+                </div>
+        </div>
+    </div>
+
+    </form>
+    <input name="Name" type="hidden" value="Hello World"/>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

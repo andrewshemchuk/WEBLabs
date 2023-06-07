@@ -1,0 +1,165 @@
+#add-form body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 30px;
+  background-color: rgb(212, 212, 212);
+}
+#add-form .title {
+  font-size: 14px;
+  color: grey;
+}
+#add-form .form {
+  border: 1px solid grey;
+  border-radius: 3px;
+}
+#add-form .add-form {
+  margin: 0 auto;
+  max-width: 450px;
+  background-color: #ffffff;
+  border-radius: 3px;
+}
+#add-form .header-block {
+  border-radius: 3px 3px 0 0;
+  padding: 10px;
+  background-color: rgb(61, 61, 61);
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#add-form .header-block__title {
+  font-size: 20px;
+  color: aliceblue;
+}
+#add-form .header-block__cross {
+  width: 30px;
+  height: 30px;
+  background: url("../img/delete.png") 0 0 no-repeat;
+}
+#add-form .header-block__cross:hover {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background: url("../img/close2.png") 0 0 no-repeat;
+}
+#add-form .notes {
+  padding: 15px 25px;
+  padding-bottom: 10px;
+}
+#add-form .notes .title {
+  margin-bottom: 3px;
+}
+#add-form .notes textarea {
+  max-height: 100px;
+  padding: 5px;
+  width: 100%;
+  resize: none;
+}
+#add-form .button {
+  height: 95px;
+  padding: 25px;
+}
+#add-form .button__content {
+  width: 100%;
+  height: 100%;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+  font-weight: 600;
+  color: #f45c43;
+  border: 1px solid #f45c43;
+  background-color: rgb(255, 255, 255);
+}
+#add-form .button__content:hover {
+  font-weight: 600;
+  color: #fefefe;
+  border: 1px solid #f45c43;
+  background-color: #f45c43;
+}
+#add-form .button__content:active {
+  font-weight: 600;
+  color: #fefefe;
+  border: 1px solid #8a2110;
+  background-color: #8a2110;
+}
+#add-form .block-fields {
+  padding: 25px;
+  padding-bottom: 0%;
+}
+#add-form .block-fields__name-sceciality {
+  margin-bottom: 10px;
+}
+#add-form .block-fields__name-sceciality .form {
+  padding: 5px;
+  max-height: 70px;
+  height: 100%;
+  width: 100%;
+}
+#add-form .block-fields__name-sceciality .title {
+  margin-bottom: 3px;
+}
+#add-form .flex {
+  padding: 0 25px;
+}
+#add-form .flex__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#add-form .flex__column {
+  width: 47%;
+}
+#add-form .flex__content {
+  margin-bottom: 10px;
+}
+#add-form .flex__content .title {
+  margin-bottom: 3px;
+}
+#add-form .flex__content .form {
+  padding: 5px;
+  width: 100%;
+}
+#add-form .block {
+  padding: 0 25px;
+  line-height: 10px;
+}
+#add-form .block .form-data {
+  border: 1px solid grey;
+  border-radius: 3px;
+  width: 94%;
+  padding: 5px;
+}
+#add-form .block-content {
+  width: 50%;
+}
+#add-form .block-info {
+  width: 100%;
+  margin-bottom: 10px;
+}
+#add-form .block-info .form-color {
+  position: relative;
+  top: 3px;
+  border: 1px solid grey;
+  border-radius: 3px;
+  margin-left: 25px;
+}
+#add-form .block .title {
+  line-height: 14px;
+  margin-bottom: 3px;
+}
+#add-form .radio-items input {
+  position: relative;
+  top: 2px;
+}
+#add-form .radio-items .title {
+  margin-right: 20px;
+}

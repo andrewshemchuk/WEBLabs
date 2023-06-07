@@ -1,0 +1,52 @@
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  margin-bottom: 30px;
+
+  > * {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 22px;
+    width: fit-content;
+    position: relative;
+
+    color: grey;
+
+    h4 {
+      padding-right: 15px; 
+    }
+    input {
+      margin-right: 5px;
+    }
+    select {
+      padding: 5px;
+      border: 1px solid grey;
+      border-radius: 3px;
+    }
+
+    &:nth-child(n):not(:last-child):after {
+      content: "";
+      position: absolute;
+      border: 1px dotted grey;
+      height: 35px;
+      margin: auto 0;
+      right: 0;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .filter {
+    justify-content: center;
+    > * {
+      margin: 12px 0;
+      &:nth-child(3)::after {
+        display: none;
+      }
+    }
+  }
+} 

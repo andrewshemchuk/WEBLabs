@@ -1,0 +1,22 @@
+.button {
+  border: 1px solid #f75c48;
+  font-size: 15px;
+  padding: .5rem 1rem;
+  background-color: transparent;
+  color: #f75c48;
+
+  font-weight: 600;
+  box-sizing: border-box;
+
+  transition-duration: 300ms;
+  &:hover {
+    color: #fefefe;
+    border: 1px solid #f75c48;
+    background-color: #f75c48;
+  }
+  &:active {
+    color: #fefefe;
+    border: 1px solid #8a2110;
+    background-color: #8a2110;
+  }
+}

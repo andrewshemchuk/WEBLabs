@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Teachinder</h1>
+
+            <div class="search right-border">
+                <input class="search__field" type="search" placeholder="Name, note or age to search">
+                <button class="search__button button">Search</button>
+            </div>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="">Teachers</a>
+                    </li>
+                    <li>
+                        <a href="">Statistics</a>
+                    </li>
+                    <li>
+                        <a href="">Favorites</a>
+                    </li>
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="block-button right-border">
+                <button class="button" onclick="window.location.href = '#popup1'">
+                    Add teacher
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <section class="teachers">
+                <h2>Top Teachers</h2>
+                <div class="filter">
+                    <div class="filter__age">
+                        <h4>Age</h4>
+                        <select name="age" id="">
+                            <option value="18-31">18-31</option>
+                            <option value="31-50">31-50</option>
+                        </select>
+                    </div>
+                    <div class="filter__region">
+                        <h4>Region</h4>
+                        <select name="region" id="">
+                            <option value="Ukraine">Ukraine</option>
+                            <option value="China">China</option>
+                        </select>
+                    </div>
+                    <div class="filter__sex">
+                        <h4>Sex</h4>
+                        <select name="sex" id="">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+                    <div class="filter__photo">
+                        <input type="checkbox" value="photo-filter">  Only with photo
+                    </div>
+                    <div class="filter__favorites">
+                        <input type="checkbox" value="favorites-filter">  Only favorites
+                    </div>
+                </div>
+                <div class="flex-top-teachers">
+                    <div class="flex-content" onclick="window.location.href = '#popup2'">
+                        <div class="image">
+                            <img src="./img/Avatar.jpg" alt="not found">
+                        </div>
+                        <h3 class="name">Ihor Tkachuk</h3>
+                        <h4 class="speciality">Chemistry</h4>
+                        <h5 class="country">Ukraine</h5>
+                    </div>
+                    <div class="flex-content" onclick="window.location.href = '#popup2'">
+                        <div class="image">
+                            <img src="./img/Avatar.jpg" alt="not found">
+                        </div>
+                        <h3 class="name">Ihor Tkachuk</h3>
+                        <h4 class="speciality">Chemistry</h4>
+                        <h5 class="country">Ukraine</h5>
+                    </div>
+                    <div class="flex-content" onclick="window.location.href = '#popup2'">
+                        <div class="image">
+                            <img src="./img/Avatar.jpg" alt="not found">
+                        </div>
+                        <h3 class="name">Ihor Tkachuk</h3>
+                        <h4 class="speciality">Chemistry</h4>
+                        <h5 class="country">Ukraine</h5>
+                    </div>
+                    <div class="flex-content" onclick="window.location.href = '#popup2'">
+                        <div class="image">
+                            <img src="./img/Avatar.jpg" alt="not found">
+                        </div>
+                        <h3 class="name">Ihor Tkachuk</h3>
+                        <h4 class="speciality">Chemistry</h4>
+                        <h5 class="country">Ukraine</h5>
+                    </div>
+                    <div class="flex-content" onclick="window.location.href = '#popup2'">
+                        <div class="image">
+                            <img src="./img/Avatar.jpg" alt="not found">
+                        </div>
+                        <h3 class="name">Ihor Tkachuk</h3>
+                        <h4 class="speciality">Chemistry</h4>
+                        <h5 class="country">Ukraine</h5>
+                    </div>
+                    <div class="flex-content" onclick="window.location.href = '#popup2'">
+                        <div class="image">
+                            <img src="./img/Avatar.jpg" alt="not found">
+                        </div>
+                        <h3 class="name">Ihor Tkachuk</h3>
+                        <h4 class="speciality">Chemistry</h4>
+                        <h5 class="country">Ukraine</h5>
+                    </div>
+                    <div class="flex-content" onclick="window.location.href = '#popup2'">
+                        <div class="image">
+                            <img src="./img/Avatar.jpg" alt="not found">
+                        </div>
+                        <h3 class="name">Ihor Tkachuk</h3>
+                        <h4 class="speciality">Chemistry</h4>
+                        <h5 class="country">Ukraine</h5>
+                    </div>
+                </div>
+            </section>
+            <section class="statistics">
+                <h2>Statistics</h2>
+                <table class="table">
+                    <thead>
+                       <tr class="table__head">
+                            <th>
+                                <span>Name</span>
+                            </th>
+                            <th>
+                                <span>Speciality</span>
+                            </th>
+                            <th>
+                                <span>Age</span>
+                            </th>
+                            <th>
+                                <span>Gender</span>
+                            </th>
+                            <th>
+                                <span>Nationality</span>
+                            </th>
+                       </tr> 
+                    </thead>
+                    <tbody class="table__body">
+                        <tr>
+                            <td class="left">Daisy Alexander</td>
+                            <td>Chemistry</td>
+                            <td>28</td>
+                            <td>Female</td>
+                            <td>Vietnam</td>
+                        </tr>
+                        <tr>
+                            <td class="left">Julia Bradley</td>
+                            <td>Math</td>
+                            <td>26</td>
+                            <td>Female</td>
+                            <td>USA</td>
+                        </tr>
+                        <tr>
+                            <td class="left">Rita Hart</td>
+                            <td>Art</td>
+                            <td>41</td>
+                            <td>Female</td>
+                            <td>Ireland</td>
+                        </tr>
+                        <tr>
+                            <td class="left">Jonathan Jacobs</td>
+                            <td>Math</td>
+                            <td>32</td>
+                            <td>Male</td>
+                            <td>England</td>
+                        </tr>
+                        <tr>
+                            <td class="left">Nathaniel White</td>
+                            <td>Computer Science</td>
+                            <td>37</td>
+                            <td>Male</td>
+                            <td>Austria</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="table-nav">
+                    <a href="" class="page">1</a>
+                    <a href="" class="page">2</a>
+                    <a href="" class="page">3</a>
+                    <a href="" class="page">Last</a>
+                </div>
+            </section>
+            <section class="favorites">
+                <h2>Favorites</h2>
+                <div class="flex-favorite-teachers" onclick="window.location.href = '#popup2'">
+                    <div class="flex-content">
+                        <div class="image">
+                            <img src="./img/Avatar.jpg" alt="not found">
+                        </div>
+                        <h3 class="name">Ihor Tkachuk</h3>
+                        <h4 class="speciality">Chemistry</h4>
+                        <h5 class="country">Ukraine</h5>
+                    </div>
+                    <div class="flex-content" onclick="window.location.href = '#popup2'"> 
+                        <div class="image">
+                            <img src="./img/Avatar.jpg" alt="not found">
+                        </div>
+                        <h3 class="name">Ihor Tkachuk</h3>
+                        <h4 class="speciality">Chemistry</h4>
+                        <h5 class="country">Ukraine</h5>
+                    </div>
+                    <div class="flex-content" onclick="window.location.href = '#popup2'">
+                        <div class="image">
+                            <img src="./img/Avatar.jpg" alt="not found">
+                        </div>
+                        <h3 class="name">Ihor Tkachuk</h3>
+                        <h4 class="speciality">Chemistry</h4>
+                        <h5 class="country">Ukraine</h5>
+                    </div>
+                    <div class="flex-content" onclick="window.location.href = '#popup2'">
+                        <div class="image">
+                            <img src="./img/Avatar.jpg" alt="not found">
+                        </div>
+                        <h3 class="name">Ihor Tkachuk</h3>
+                        <h4 class="speciality">Chemistry</h4>
+                        <h5 class="country">Ukraine</h5>
+                    </div>
+                    <div class="flex-content" onclick="window.location.href = '#popup2'">
+                        <div class="image">
+                            <img src="./img/Avatar.jpg" alt="not found">
+                        </div>
+                        <h3 class="name">Ihor Tkachuk</h3>
+                        <h4 class="speciality">Chemistry</h4>
+                        <h5 class="country">Ukraine</h5>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <article class="content">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus aperiam, laboriosam eligendi, voluptatibus voluptates veritatis, consequuntur quos eum excepturi esse aliquid tempore possimus recusandae inventore? Quidem, aut nesciunt corrupti necessitatibus unde excepturi reprehenderit corporis dolorum minima labore minus libero itaque aspernatur, ex, repellendus pariatur facilis possimus et. Magni, maiores sapiente.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam corporis nostrum minus aspernatur, dolores nesciunt.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus magni sed officia repellendus nihil. Omnis.</p>
+            </article>
+            <div class="grid">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="">Teachers</a>
+                        </li>
+                        <li>
+                            <a href="">Statistics</a>
+                        </li>
+                        <li>
+                            <a href="">Favorites</a>
+                        </li>
+                        <li>
+                            <a href="">About</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="add-button right-border">
+                    <button class="button" onclick="window.location.href = '#popup1'">Add teacher</button>
+                </div>
+            </div>
+        </footer>
+    </div> 
+    <div id="popup1" class="overlay">
+        <div class="add-form">
+        
+            <header class="header-block">
+                <div class="header-block__title">
+                    <h1>Add Teacher</h1>
+                </div>
+                <div class="header-block__cross">
+                    <a class="close" href="#">&times;</a>
+                </div>
+            </header>
+    
+            <div class="form-fields">
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <div class="block-fields">
+                        <div class="block-fields__name-sceciality">
+                            <div class="title">
+                                Name
+                            </div>
+                            <div>
+                                <input required class="form" type="text" placeholder="Enter name" name="fullName">
+                            </div>
+                        </div>
+    
+                        <div class="block-fields__name-sceciality">
+                            <div class="title">
+                                Sceciality
+                            </div>
+                            <div>
+                                <select class="form" name="sceciality">
+                                    <option value="Mathematics">Mathematics</option>
+                                    <option value="Graphic Design">Graphic Design</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+    
+                <div class="flex">
+                    <div class="flex__row">
+                        <div class="flex__column">
+                            <div class="flex__content">
+                                <div class="title">
+                                    Country
+                                </div>
+                                <div>
+                                    <select class="form" name="country">
+                                        <option value="Ukraine">Ukraine</option>
+                                        <option value="Burning russia">burning russia</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex__column">
+                            <div class="flex__content">
+                                <div class="title">
+                                    City
+                                </div>
+                                <div>
+                                    <input required class="form" type="text" name="city">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex__column">
+                            <div class="flex__content">
+                                <div class="title">
+                                    Email
+                                </div>
+                                <div>
+                                    <input required class="form" type="email" name="email" pattern="[a-z0-9._%+-]+@gmail.com" title = "user@gmail.com">
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="flex__column">
+                            <div div class="flex__content">
+                                <div class="title">
+                                    Phone
+                                </div>
+                                <div>
+                                    <input required class="form" type="tel" name="phone" pattern="\d{3}-\d{3}-\d{4}" title = "xxx-xxx-xxxx">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="block">
+                    <div class="block-content">
+                    <div class="block-info">
+                            <div class="title">
+                                Date of birth
+                            </div>
+                            <div>
+                                <input required class="form-data" type="date" name="dateOfBirth">
+                            </div>
+                    </div>
+                    <div class="block-info">
+                            <div class="radio-items">
+                                    <!-- <h6 class = "title">Sex</h6> -->
+                                    <span class="title">Sex</span>
+                                    <span class="radio-text">Male <input checked type="radio" name="sex" value="male"></span>
+                                    <span class="radio-text">Female <input type="radio" name="sex" value="female"></span>
+                            </div>
+                    </div>
+                    <div class="block-info">
+                            <span class="title">Background color</span>
+                            <input class="form-color" type="color">
+                    </div>
+                    </div>
+                </div>
+    
+                    <div class="notes">
+                        <div class="title">
+                            Notes (optional)
+                        </div>
+                        <div>
+                            <textarea class="form" name="notes" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+    
+                    <div class="button2">
+                        <button onclick="" class = "button2__content" type="submit">
+                            Add
+                        </button>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup2" class="overlay">
+        <div id="short-info-card" data-color = "white">
+            <header class="header-block">
+                <div class="header-block__title">
+                    <h1>Full info card</h1>
+                </div>
+                <div class="header-block__cross">
+                    <a class="close" href="#">&times;</a>
+                </div>
+            </header>
+    
+            <div class="content">
+            <div class="flex">
+            <div class="flex-compontent">
+                <div class="image">
+                    <img src="./img/Account-Avatar-Profile-PNG-Photo.png" alt="profile picture">
+                </div>
+            </div>
+    
+            <div class="flex-component">
+                <div class="info-component" >
+                    <div class="info-field">
+                        <h2 class="title">Full name:</h2> 
+                        <span>Example</span>
+                    </div>
+                    <div class="info-field">
+                        <h2 class="title">Sex:</h2>
+                        <span>Example</span> 
+                    </div>
+                    <div class="info-field">
+                        <h2 class="title">Age:</h2> 
+                        <span>Example</span>
+                    </div>
+                    <div class="info-field">
+                        <h2 class="title">Email:</h2>
+                        <span>Example</span> 
+                    </div>
+                    <div class="info-field">
+                        <h2 class="title">Phone:</h2>
+                        <span>Example</span> 
+                    </div>
+                    <div class="info-field">
+                        <h2 class="title">Country:</h2>
+                        <span>Example</span> 
+                    </div>
+                    <div class="info-field">
+                        <h2 class="title">Сity:</h2> 
+                        <span>Example</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+    
+            <div class="note">
+                <div class="info-field">
+                    <h2 class="title">Note</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima magnam autem ipsa facilis, tempora voluptas qui ut aut. Dolorem placeat consequuntur fugit. Quam velit harum asperiores aliquid quos officia quaerat.
+                    </p> 
+                </div>
+            
+                <div class="info-field">
+                    <!-- <a href="">toggle map</a> -->
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20333.2217358411!2d30.634529074306446!3d50.428941745224144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1679043240960!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

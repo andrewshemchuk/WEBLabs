@@ -1,0 +1,26 @@
+.top-teachers {
+  margin-bottom: 3rem;
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    font-size: 35px;
+    font-weight: 600;
+  
+    height: 112px;
+    position: relative;
+  
+    &::after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      background-color: black;
+      max-width: 500px;
+      width: 100%;
+      margin: 0 auto;
+      top: 0;
+    }
+  }
+}

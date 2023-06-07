@@ -1,0 +1,125 @@
+.overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+}
+
+.header-block {
+  padding: 10px;
+  background-color: rgb(61, 61, 61);
+  height: 45px;
+  border-radius: 3px 3px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-block__title {
+  font-size: 20px;
+  color: aliceblue;
+}
+.header-block__cross {
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+.header-block__cross .close {
+  position: absolute;
+  margin: auto auto;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  color: #bbbbbb;
+}
+.header-block__cross .close:visited {
+  color: #c7c7c7;
+}
+.header-block__cross .close:hover {
+  color: #929292;
+}
+
+.short-info-card {
+  border: 1px solid grey;
+  border-radius: 5px;
+  line-height: 19px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.info-field a {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+.info-field p {
+  text-align: justify;
+}
+
+.title {
+  font-size: 16px;
+  color: grey;
+}
+
+.flex {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.image {
+  max-width: 160px;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  padding: 20px;
+}
+
+.note {
+  margin-top: 10px;
+}
+
+.map {
+  max-width: 100%;
+  max-height: 30vh;
+}

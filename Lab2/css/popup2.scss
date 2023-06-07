@@ -1,0 +1,129 @@
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+#short-info-card {
+  width: 600px;
+}
+.header {
+
+  &-block{
+    padding: 10px;
+  background-color: rgb(61, 61, 61);
+  height: 45px;
+  border-radius: 3px 3px 0 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  &-block__title{
+  font-size: 20px;
+  color: aliceblue;
+}
+&-block__cross{
+  width: 30px;
+  height: 30px;
+  position: relative;
+  // background: url('../img/delete.png') 0 0 no-repeat;
+  .close {
+    position: absolute;
+    margin: auto auto;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+
+    color: #bbbbbb;
+    &:visited {
+      color: #c7c7c7;
+    }
+    &:hover {
+      color: #929292;
+    }
+  }
+}
+}
+
+.short {
+  &-info-card{
+    border: 1px solid grey;
+    border-radius: 5px;
+    line-height: 19px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+}
+.header {
+  &-block{
+
+}
+  &-block__title{
+
+}
+  &-block__cross{
+
+}
+}
+.info {
+  &-component{
+
+}
+  &-field{
+  a {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+  }
+  p {
+    text-align: justify;
+  }
+}
+}
+
+.title {
+  font-size: 16px;
+  color: grey;
+}
+
+.flex {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.image {
+  max-width: 160px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.content {
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.note {
+  margin-top: 10px;
+}
+
+.map {
+  max-width: 100%;
+  max-height: 30vh;
+}

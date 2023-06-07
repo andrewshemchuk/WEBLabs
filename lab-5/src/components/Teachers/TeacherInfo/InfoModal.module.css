@@ -1,0 +1,66 @@
+.full-teacher-card section {
+  margin-bottom: 1rem;
+}
+.full-teacher-card .full-teacher-card__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 1rem;
+}
+.full-teacher-card .full-teacher-card__header .teacher-card__img {
+  -ms-flex-preferred-size: 33.33333%;
+      flex-basis: 33.33333%;
+}
+.full-teacher-card .full-teacher-card__header .teacher-card__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.full-teacher-card .full-teacher-card__header .teacher-card__info {
+  margin-left: 1rem;
+}
+.full-teacher-card .full-teacher-card__header .teacher-card__info h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.full-teacher-card .full-teacher-card__header .teacher-card__info h2 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.full-teacher-card .full-teacher-card__header .teacher-card__info a {
+  text-decoration: none;
+  color: inherit;
+}
+.full-teacher-card .full-teacher-card__header .teacher-card__info p, .full-teacher-card .full-teacher-card__header .teacher-card__info a {
+  padding-bottom: 1rem;
+}
+.full-teacher-card section a {
+  border-bottom: dotted 1px blue;
+  text-decoration: none;
+}
+
+.add_button {
+  height: 50px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  color: #f75c48;
+  border: 1px solid #f75c48;
+  background-color: rgb(255, 255, 255);
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+.add_button:hover {
+  color: #fefefe;
+  border: 1px solid #f75c48;
+  background-color: #f75c48;
+}
+.add_button:active {
+  color: #fefefe;
+  border: 1px solid #8a2110;
+  background-color: #8a2110;
+}

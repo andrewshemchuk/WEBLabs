@@ -1,0 +1,46 @@
+.top-teachers__filter {
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  margin-bottom: 30px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  color: #4c4c4c;
+  @media only screen and (max-device-width: 728px) {
+    width: 100%;
+  }
+
+  .filter__options {
+    display: flex;
+    align-items: center;
+    padding-right: 1%;
+    height: 2rem;
+    border-right: 1px dashed #787878;
+    @media only screen and (max-device-width: 728px) {
+      padding-left: 1%;
+    }
+
+    select {
+      margin-left: 1rem;
+      padding: 0 0.5rem;
+      height: 100%;
+      outline: none;
+    }
+  }
+
+  .checkbox {
+    input {
+      margin-right: .5rem;
+      accent-color: #4c4c4c;
+    }
+  }
+
+  .checkbox:hover {
+    color: black;
+  }
+}
+

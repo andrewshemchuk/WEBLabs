@@ -1,0 +1,20 @@
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 1px solid black;
+}
+.flex .image {
+  width: 80%;
+}
+.flex-content {
+  border: 1px solid black;
+  width: 200px;
+  height: 300px;
+  text-align: center;
+}
